@@ -33,6 +33,7 @@ public class GroceryController {
 		return groceryservice.getallGroceries();
 		
 	}
+
 	
 	@GetMapping("/category/{category}")
 	public ResponseEntity<List<Grocery>> findByCategory(@PathVariable  String category){
